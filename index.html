@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พิธีไหว้ครูดนตรีกองการสังคีต ครั้งที่ 58 ประจำปี 2568</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-bg-dark {
+            background: linear-gradient(135deg, #2c3e50 0%, #3c5aa6 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .dark .card-hover:hover {
+            box-shadow: 0 20px 40px rgba(255,255,255,0.1);
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+            100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 1s ease-out;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .music-note {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .bg-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 2px, transparent 2px);
+            background-size: 50px 50px;
+        }
+
+        .countdown-box {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24, #ff6b6b);
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="transition-all duration-300">
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="fixed top-4 right-4 z-50 p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:scale-110 transition-all duration-300 pulse-glow">
+        <svg id="sunIcon" class="w-6 h-6 text-yellow-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+        </svg>
+        <svg id="moonIcon" class="w-6 h-6 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </button>
+
+    <!-- Header Section -->
+    <div class="gradient-bg dark:gradient-bg-dark bg-pattern min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Floating Music Notes -->
+        <div class="absolute top-10 left-10 music-note text-white text-4xl opacity-20">♪</div>
+        <div class="absolute top-32 right-20 music-note text-white text-3xl opacity-20" style="animation-delay: 0.5s;">♫</div>
+        <div class="absolute bottom-20 left-32 music-note text-white text-5xl opacity-20" style="animation-delay: 1s;">♪</div>
+        <div class="absolute bottom-40 right-10 music-note text-white text-4xl opacity-20" style="animation-delay: 1.5s;">♬</div>
+
+        <div class="container mx-auto px-4 text-center text-white">
+            <div class="slide-in-left">
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 text-shadow floating">📣</h1>
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 text-shadow">เชิญร่วมงาน</h2>
+                <h3 class="text-2xl md:text-4xl font-semibold mb-6 text-shadow">พิธีไหว้ครูดนตรีกองการสังคีต</h3>
+                <h4 class="text-xl md:text-3xl font-medium mb-8 text-shadow">ครั้งที่ 58 ประจำปี 2568</h4>
+            </div>
+
+            <!-- Countdown -->
+            <div class="slide-in-right">
+                <div class="countdown-box rounded-2xl p-6 mb-8 inline-block">
+                    <h5 class="text-lg font-semibold mb-2">เหลือเวลาอีก</h5>
+                    <div id="countdown" class="text-3xl md:text-4xl font-bold"></div>
+                </div>
+            </div>
+
+            <div class="fade-in-up">
+                <div class="animate-bounce">
+                    <svg class="w-8 h-8 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Section -->
+    <div class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Date & Time Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">วันที่และเวลา</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-2">วันพฤหัสบดีที่ 24 กรกฎาคม 2568</p>
+                        <div class="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg mt-4">
+                            <p class="font-semibold text-blue-800 dark:text-blue-200">🕕 พิธีสงฆ์: 06:00 น.</p>
+                            <p class="font-semibold text-blue-800 dark:text-blue-200">📝 ลงทะเบียน: 08:00 น.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">📍</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">สถานที่จัดงาน</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            โถงอเนกประสงค์ ชั้น 1<br>
+                            อาคารไอราวัตพัฒนา<br>
+                            ศาลาว่าการกรุงเทพมหานคร<br>
+                            ดินแดง
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Dress Code Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">👔</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">การแต่งกาย</h3>
+                        <div class="bg-yellow-100 dark:bg-yellow-900 p-4 rounded-lg">
+                            <p class="font-semibold text-yellow-800 dark:text-yellow-200">💢 ชุดสุภาพ</p>
+                            <p class="text-yellow-700 dark:text-yellow-300">สีขาวหรือสีนวล</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Images Section -->
+    <div class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">ข้อมูลเพิ่มเติม</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-hover">
+                    <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white text-center">ภาพข่าว</h3>
+                        <img src="https://lh5.googleusercontent.com/d/1KzhNOMJ52qmezCel8mHNIr6MV73cB7Xz" alt="ภาพข่าวพิธีไหว้ครูดนตรี" class="w-full rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <div class="card-hover">
+                    <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white text-center">QR Code กำหนดการ</h3>
+                        <img src="https://lh5.googleusercontent.com/d/1LqXOnBNP1HA5Uh7GPYM5sEmhx0puKGFF" alt="QR Code กำหนดการพิธี" class="w-full rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-800 dark:to-blue-800 py-12 transition-colors duration-300">
+        <div class="container mx-auto px-4 text-center text-white">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-4">จัดโดย</h3>
+                <p class="text-lg">#กองการสังคีต</p>
+                <p class="text-lg">#สำนักวัฒนธรรมกีฬาและการท่องเที่ยว</p>
+                <p class="text-lg">#กรุงเทพมหานคร</p>
+            </div>
+            
+            <div class="mb-6">
+                <a href="https://www.facebook.com/share/p/1GW1pJ6mdV/?" target="_blank" 
+                   class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-all duration-300 hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M20 10C20 4.477 15.523 0 10 0S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd"/>
+                    </svg>
+                    ดูรายละเอียดใน Facebook
+                </a>
+            </div>
+
+            <p class="text-sm opacity-80">ขอเชิญทุกท่านร่วมงานในครั้งนี้ 🎵</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+        
+        themeToggle.addEventListener('click', function() {
+            document.documentElement.classList.toggle('dark');
+            
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('July 24, 2025 06:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = 'งานเริ่มแล้ว!';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = 
+                `${days} วัน ${hours} ชม. ${minutes} นาที ${seconds} วินาที`;
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Smooth scrolling for internal links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add scroll animations when elements come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all cards
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Add parallax effect to background elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.music-note');
+            const speed = 0.5;
+
+            parallax.forEach((element, index) => {
+                const yPos = -(scrolled * speed * (index + 1) * 0.1);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
